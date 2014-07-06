@@ -16,9 +16,9 @@ Output Format
 A single integer which will be the minimum unfairness.
 
 Constraints 
-1<=N<=105
+1<=N<=10^5
 1<=K<=N
-0<= number of candies in any packet <=109
+0<= number of candies in any packet <=10^9
 
 Sample Input #00
 
