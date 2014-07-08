@@ -1,3 +1,5 @@
+/* This version will return a Segmentation Fault with "input05.txt" */
+
 #include <iostream>
 
 using namespace std;
