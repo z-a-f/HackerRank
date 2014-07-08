@@ -3,7 +3,7 @@
 using namespace std;
 
 #define RANGE 100
-int C[RANGE] = {0};
+
 int main() {
     // int k = RANGE;  // counter size
     int N;  // Number of elements in an array;
@@ -13,7 +13,7 @@ int main() {
     // Get unsorrted array:
     short A[N];
     string str[N];
-    
+    int C[RANGE] = {0};
     for (int i = 0; i < N; i++){
         cin >> A[i] >> str[i];
         C[A[i]]++;
@@ -21,7 +21,7 @@ int main() {
             str[i] = "-";
     }
     
-    for (int i = 1; i < RANGE; i++) {
+    for (unsigned short i = 1; i < RANGE; i++) {
         C[i] += C[i-1];
     }
 
@@ -34,7 +34,8 @@ int main() {
         C[A[i]] -= 1;
         // B[C[A[i]]] = A[i];
         strB[C[A[i]]] = str[i];
-    } 
+        
+    }
     
     
     for (int i = 0; i < N; i++) {
