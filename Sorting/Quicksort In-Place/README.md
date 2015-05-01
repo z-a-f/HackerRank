@@ -24,4 +24,36 @@ Since you cannot just create new sub-arrays for the elements, partition method w
 * To ensure that you don't swap a small element with another small element, use an index to keep track of the small elements that have already been swapped into their "place".
 ![Sorting GIF][quicksortHR1]
 
+### Input Format
+There will be two lines of input:
+
+n - the size of the array
+ar - the n numbers of the array
+
+### Output Format
+Print the entire array on a new line at the end of every partitioning method.
+
+### Constraints
+1 <= n <= 5000
+-10000 <= x <= 10000, x is element of ar
+
+### Sample
+#### Input
+```
+7
+1 3 9 8 2 7 5
+```
+
+#### Output
+```
+1 3 2 5 9 7 8
+1 2 3 5 9 7 8
+1 2 3 5 7 8 9
+```
+
+#### Explanation
+5 is initally selected as the pivot, and the array is partitioned as shown in the diagram. The left side is partitioned next with 2 as the pivot. Finally, the right side is partitioned with 8 as the pivot. The entire array is now sorted.
+![explanation][quicksortHR2]
+
 [quicksortHR1]: http://upload.wikimedia.org/wikipedia/commons/8/84/Lomuto_animated.gif
+[quicksortHR2]: https://s3.amazonaws.com/hr-challenge-images/quick-sort/QuickSortInPlace.png
